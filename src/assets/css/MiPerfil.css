@@ -1,0 +1,41 @@
+.perfil-container {
+    display: flex;
+    min-height: calc(100vh - 60px);
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    background: #f0f0f0;
+    padding: 1rem;
+}
+
+.main-content h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.publicaciones-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .perfil-container {
+        flex-direction: row;
+    }
+    
+    .main-content {
+        padding: 2rem;
+    }
+    
+    .publicaciones-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 2rem;
+        padding: 1rem;
+    }
+}

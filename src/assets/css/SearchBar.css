@@ -1,0 +1,22 @@
+.search-container {
+    position: absolute;
+    left: 1397px;
+    top: 563px;
+    width: 42px;
+    height: 42px;
+    justify-content: start;
+    align-items: start;
+  }
+  .search-box {
+    position: absolute;
+    left: 364px;
+    top: 572px;
+    width: 211px;
+    height: 23px;
+    color: #797878;
+    font-size: 20px;
+    font-family: Inter, "Regular";
+    font-weight: 400;
+    text-align: left;
+    vertical-align: top;
+  }

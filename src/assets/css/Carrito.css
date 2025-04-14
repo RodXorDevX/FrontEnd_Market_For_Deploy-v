@@ -1,0 +1,135 @@
+.carrito-container {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    flex-shrink: 0;
+  }
+  
+  .carrito-main {
+    flex: 1;
+    background: #d9d9d9;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .carrito-productos {
+    flex: 2;
+  }
+  
+  .carrito-productos h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .carrito-item {
+    background: #fff;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .carrito-item img {
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .carrito-item-info {
+    flex: 1;
+  }
+  
+  .carrito-item-info h4 {
+    margin: 0;
+  }
+  
+  .carrito-item-info p {
+    font-size: 0.9rem;
+    color: gray;
+  }
+  
+  .carrito-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .carrito-precio {
+    width: 80px;
+    text-align: right;
+  }
+  
+  .carrito-resumen {
+    background: #fff;
+    padding: 1.5rem;
+    width: 250px;
+    height: fit-content;
+  }
+  
+  .carrito-resumen ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .carrito-resumen button {
+    background-color: #0a1c3d;
+    color: #fff;
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    margin-top: 1rem;
+    cursor: pointer;
+  }
+  
+  .success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carrito-container {
+      flex-direction: column;
+    }
+    
+    .sidebar, .carrito-main {
+      width: 100%;
+    }
+    
+    .carrito-main {
+      flex-direction: column;
+      padding: 1rem;
+    }
+    
+    .carrito-resumen-mobile {
+      order: -1;
+      margin-bottom: 2rem;
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    
+    .carrito-item {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }

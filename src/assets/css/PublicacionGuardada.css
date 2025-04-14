@@ -1,0 +1,42 @@
+.producto.guardado {
+    /* Hereda los estilos base de .producto */
+    position: relative;
+}
+
+.botones-guardado {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.ver-button, .eliminar-button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.ver-button {
+    background-color: #072d57;
+    color: white;
+}
+
+.ver-button:hover {
+    background-color: #0056b3;
+}
+
+.eliminar-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.eliminar-button:hover {
+    background-color: #c82333;
+} 

@@ -1,0 +1,155 @@
+/* PropiedadesProducto.css */
+.propiedades-producto {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .propiedades-producto h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .form-columns {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .form-columns {
+      flex-direction: column;
+    }
+  }
+  
+  .form-column {
+    flex: 1;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  input.error,
+  select.error,
+  textarea.error {
+    border-color: #ff3860;
+  }
+  
+  .error-text {
+    color: #ff3860;
+    font-size: 12px;
+    margin-top: 3px;
+    display: block;
+  }
+  
+  .error-message {
+    background-color: #fff3f3;
+    color: #ff3860;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border-left: 3px solid #ff3860;
+  }
+  
+  .imagen-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px dashed #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .imagen-preview {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  
+  .imagen-input {
+    width: 100%;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .save-btn,
+  .cancel-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: none;
+  }
+  
+  .save-btn {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #3e8e41;
+  }
+  
+  .save-btn:disabled {
+    background-color: #8bc34a;
+    cursor: not-allowed;
+  }
+  
+  .cancel-btn {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .cancel-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }

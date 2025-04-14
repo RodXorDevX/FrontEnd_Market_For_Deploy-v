@@ -1,0 +1,133 @@
+.banner-carousel {
+  margin-bottom: 2rem;
+}
+
+.carousel-item {
+  height: 500px; /* Ajusta la altura según necesites */
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-caption {
+  text-align: left;
+  left: 10%;
+  right: auto;
+  bottom: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 500px;
+}
+
+.new-arrival {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.yellow-bar {
+  width: 80px;
+  height: 30px;
+  background-color: #ffc107;
+  margin-right: 10px;
+}
+
+.new-arrival span {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.banner-content p {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+.banner-date {
+  position: absolute;
+  top: -150px;
+  right: -400px;
+  font-size: 16px;
+  color: #777;
+}
+
+.discount-badge {
+  position: absolute;
+  bottom: -50px;
+  right: -400px;
+  background-color: #ffc107;
+  padding: 5px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+/* Controles del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0.8;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.carousel-indicators {
+  bottom: 20px;
+}
+
+.carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #ffc107;
+}
+
+/* Animación de transición */
+.carousel-item {
+  transition: transform .6s ease-in-out;
+}
+
+/* Media queries para móvil */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 300px; /* Reducir altura en móvil */
+  }
+  
+  .carousel-caption {
+    left: 5%;
+    max-width: 90%;
+  }
+  
+  .banner-content h1 {
+    font-size: 28px; /* Reducir tamaño de fuente */
+  }
+  
+  .banner-content p {
+    font-size: 16px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    padding: 10px; /* Iconos más pequeños */
+  }
+}
